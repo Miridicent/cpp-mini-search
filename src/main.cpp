@@ -29,5 +29,17 @@ int main(int argc, char* argv[])
         return 1;
     }
 
+    for (const auto& entry : filesystem::directory_iterator(directoryPath))
+    {
+        if (filesystem::is_directory(entry.path()))
+        {
+            cout << "Directory: " << entry.path() << endl;
+        }
+        else
+        {
+            cout << "File: " << entry.path() << endl;
+        }
+    }
+
     return 0;
 }
