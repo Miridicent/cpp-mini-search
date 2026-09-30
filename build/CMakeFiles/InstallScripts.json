@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Git/Misc/cpp-mini-search/build/cmake_install.cmake"
+		"C:/Git/cpp-mini-search/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

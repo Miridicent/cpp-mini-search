@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    for (const auto& entry : filesystem::directory_iterator(directoryPath))
+    for (const auto& entry : filesystem::recursive_directory_iterator(directoryPath))
     {
         if (filesystem::is_directory(entry.path()))
         {
